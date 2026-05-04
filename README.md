@@ -4,6 +4,11 @@
   <img width="95.0%" src="images/dexmimicgen.gif">
 </p>
 
+From Kong: to update from source run: 
+```
+git subtree pull --prefix=References/dexmimicgen https://github.com/NVlabs/dexmimicgen.git main --squash
+```
+
 This repository contains the official release of simulation environments and datasets for the [ICRA 2025](https://2025.ieee-icra.org) paper "DexMimicGen: Automated Data Generation for Bimanual Dexterous Manipulation via Imitation Learning".
 
 Website: https://dexmimicgen.github.io

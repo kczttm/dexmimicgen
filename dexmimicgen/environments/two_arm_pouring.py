@@ -174,8 +174,9 @@ class TwoArmPouring(TwoArmDexMGEnv):
         import dexmimicgen
         from dexmimicgen.models.objects.xml_objects import BlenderObject
 
+        dexmimicgen_path = "/References/dexmimicgen/dexmimicgen"
         base_mjcf_path = os.path.join(
-            dexmimicgen.__path__[0], "models/assets/objects/objaverse/"
+            dexmimicgen_path, "models/assets/objects/objaverse/"
         )
 
         def _create_obj(cfg):
@@ -295,7 +296,7 @@ class TwoArmPouring(TwoArmDexMGEnv):
                 name="BowlSampler",
                 mujoco_objects=self.bowl,
                 x_range=(-0.15, -0.05),
-                y_range=(-0.15, -0.1),
+                y_range=(-0.10, -0.15),
                 rotation=(0.0, 0.0),
                 rotation_axis="z",
                 ensure_object_boundary_in_range=False,

@@ -457,6 +457,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--dataset",
         type=str,
+        default="References/dexmimicgen/datasets/generated/two_arm_coffee.hdf5",
         help="path to hdf5 dataset",
     )
     parser.add_argument(
@@ -470,7 +471,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--n",
         type=int,
-        default=None,
+        default=1,
         help="(optional) stop after n trajectories are played",
     )
 
@@ -485,6 +486,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--use-actions",
         action="store_true",
+        default=True,
         help="use open-loop action playback instead of loading sim states",
     )
 
@@ -492,6 +494,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--render",
         action="store_true",
+        default=True,
         help="on-screen rendering",
     )
 
