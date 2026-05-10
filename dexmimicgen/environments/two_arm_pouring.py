@@ -174,9 +174,11 @@ class TwoArmPouring(TwoArmDexMGEnv):
         import dexmimicgen
         from dexmimicgen.models.objects.xml_objects import BlenderObject
 
-        dexmimicgen_path = "/References/dexmimicgen/dexmimicgen"
+        # Resolve assets relative to the imported dexmimicgen package instead
+        # of relying on a machine-specific absolute path prefix.
+        dexmimicgen_path = os.path.dirname(dexmimicgen.__file__)
         base_mjcf_path = os.path.join(
-            dexmimicgen_path, "models/assets/objects/objaverse/"
+            dexmimicgen_path, "models", "assets", "objects", "objaverse"
         )
 
         def _create_obj(cfg):
