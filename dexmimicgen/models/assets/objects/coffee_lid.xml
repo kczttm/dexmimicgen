@@ -9,7 +9,8 @@
   <worldbody>
     <body>
       <body name="object">
-        <geom pos="0 0 0" mesh="coffee_lid_mesh" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="1000" friction="0.95 0.3 0.1" group="0" condim="4" rgba="0.839 0.839 0.839 1" material="ceramic"/>
+        <geom pos="0 0 0" mesh="coffee_lid_mesh" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="1000" friction="0.1 0.005 0.0001" group="0" condim="4" rgba="0.839 0.839 0.839 1" material="ceramic"/>
+        <!-- <geom pos="0 0 0" mesh="coffee_lid_mesh" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="1000" friction="0.95 0.3 0.1" group="0" condim="4" rgba="0.839 0.839 0.839 1" material="ceramic"/> -->
 <!--         <geom pos="0 0 0" mesh="coffee_lid_mesh" type="mesh" solimp="0.998 0.998 0.001" solref="0.001 1" density="1000" friction="0.95 0.3 0.1" group="1" condim="4" material="lid_mat"/> -->
       </body>
 <!--       <body name="visual">
